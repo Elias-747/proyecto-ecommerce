@@ -67,18 +67,7 @@
     border-color: var(--support-color);
     color: #fff;
     }
-
-    /*  Boton outline */
-    .btn-brand-outline {
-    border-color: var(--secondary-color);
-    color: var(--primary-color);
-    font-family: var(--heading-font);
-    }
-    .btn-brand-outline:hover, .btn-brand-outline:active {
-    border-color: var(--primary-color);
-    color: var(--support-color);
-    }
-
+    
     /* links  */
     .btn-quick-link { color: var(--primary-color); }
     .btn-quick-link:hover, .btn-quick-link:active { color: var(--support-color); background-color: rgba(40,75,99,.08); }
