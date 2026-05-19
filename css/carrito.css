@@ -1,0 +1,53 @@
+@media (max-width: 460px) {
+    /* 1. Eliminamos el scroll del contenedor de Bootstrap */
+    .table-responsive {
+        overflow-x: visible;
+    }
+
+    /* 2. Ocultamos el encabezado de la tabla */
+    .table-responsive thead {
+        display: none;
+    }
+
+    /* 3. Convertimos cada fila (tr) en un bloque independiente */
+    .table-responsive tbody tr {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: #fff;
+        border: 1px solid #e9ecef;
+        border-radius: 0.375rem;
+    }
+
+    /* 4. Forzamos a que cada celda (td) ocupe el 100% del ancho */
+    .table-responsive tbody td {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.5rem 0;
+        text-align: left;
+        border: none;
+    }
+
+    /* 5. Ajuste estructural para las celdas de Cantidad y Precio */
+    .table-responsive tbody td:nth-child(2)::before {
+        content: "Cantidad:";
+        font-weight: bold;
+        color: #6c757d;
+    }
+
+    .table-responsive tbody td:nth-child(3)::before {
+        content: "Precio:";
+        font-weight: bold;
+        color: #6c757d;
+    }
+
+    /* 6. Centramos el botón de eliminar al fondo */
+    .table-responsive tbody td:last-child {
+        justify-content: center;
+        padding-top: 1rem;
+        border-top: 1px dashed #e9ecef;
+    }
+}
