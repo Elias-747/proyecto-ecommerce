@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/registro.css">
 </head>
 <body>
-    <header>
+<header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom sticky-top shadow">
         <div class="container">
             <a class="navbar-brand fw-bold" href="../index.html">
@@ -21,30 +21,38 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse display-flex justify-content" id="navbarContent">
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <form class="d-flex mx-auto my-2 my-lg-0 w-50">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Buscar componentes..." aria-label="Search">
+                        <button class="btn btn-support" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
 
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a href="detalle-carrito.html" class="btn btn-outline-light position-relative border-0">
+                        <a href="pages/carrito.html" class="btn btn-outline-light position-relative border-0">
                             <i class="bi bi-cart3 fs-5"></i>
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
                         </a>
                     </li>
                     <li class="nav-item d-flex gap-2 ms-lg-3">
-                        <a href="error404.html" class="btn btn-sm btn-outline-secondary text-white border-secondary">Login</a>
-                        <a href="registro.html" class="btn btn-sm btn-support">Registro</a>
+                        <a href="pages/error404.html" class="btn btn-sm btn-outline-secondary text-white border-secondary">Login</a>
+                        <a href="pages/registro.html" class="btn btn-sm btn-support">Registro</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    </header>
+</header>
     <main>
     <!-- HERO DE LA PAGINA -->
     <div class="page-hero">
@@ -85,7 +93,7 @@
                             </div>
                             <div class="mb-4 form-check-custom">
                                 <input type="checkbox" class="form-check-input-custom" id="terminos" required>
-                                <label class="form-check-label-custom" for="terminos">acepto los <a href="/pages/error404.html" class="text-warning link-highlight">terminos y condiciones</a></label>
+                                <label class="form-check-label-custom" for="terminos">acepto los <a href="/pages/error404.html" class="link-highlight">terminos y condiciones</a></label>
                             </div>
 
                             <button type="submit" class="btn btn-outline-primary w-100"><i class="bi bi-person-check"></i>crear cuenta</button>
