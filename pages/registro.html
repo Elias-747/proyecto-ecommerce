@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/registro.css">
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/index.html">
+                <i class="bi bi-pc-display"></i> ProjectPC
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <form class="d-flex mx-auto my-2 my-lg-0 w-50">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Buscar componentes..." aria-label="Search">
+                        <button class="btn btn-support" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="pages/carrito.html" class="btn btn-outline-light position-relative border-0">
+                            <i class="bi bi-cart3 fs-5"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex gap-2 ms-lg-3">
+                        <a href="../pages/error404.html" class="btn btn-sm btn-outline-secondary text-white border-secondary">Login</a>
+                        <a href="pages/registro.html" class="btn btn-sm btn-support">Registro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <main>
+    <!-- HERO DE LA PAGINA -->
+    <div class="page-hero">
+        <div class="container">
+            <h1 class="hero-title"><i class="bi bi-person-plus-fill text-warning me-2"></i>Registro</h1>
+            <p class="hero-subtitle">crea tu cuenta hoy, arma la pc de tus sueños y aprovecha <span> el envio gratis en tu primera compra.</span> no dejes que el envio afecte a tus FPS.</p>
+        </div>
+    </div>
+    <!-- FORMULARIO DE REGISTRO -->
+    <div class="container container-form-custom mt-5">
+        <div class="row justify-content-center">
+            <div class=" col-12 col-md-8 col-lg-5">
+                <div class="card registro-card p-4 mx-auto">
+                    <div class="text-center card-header-custom text-black mb-4">
+                        <h3 class="mb-0 fw-bold">Crear Cuenta</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3 form-group-custom">
+                                <label class="form-label-custom">Nombre Completo</label>
+                                <input type="text" class="form-control-custom" placeholder="tu nombre completo">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label-custom">Email</label>
+                                <input type="text" class="form-control-custom" placeholder="tucorreo@gmail.com">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label-custom">Telefono</label>
+                                <input type="tel" class="form-control-custom" placeholder="tu numero de telefono">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label-custom">Contraseña</label>
+                                <input type="password" class="form-control-custom" placeholder="minimo 8 caracteres">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label-custom">Confirmar contraseña</label>
+                                <input type="password" class="form-control-custom" placeholder="repeti tu contraseña">
+                            </div>
+                            <div class="mb-4 form-check-custom">
+                                <input type="checkbox" class="form-check-input-custom" id="terminos" required>
+                                <label class="form-check-label-custom" for="terminos">acepto los <a href="../pages/error404.html" class="link-highlight">terminos y condiciones</a></label>
+                            </div>
+
+                            <button type="submit" class="btn btn-outline-primary w-100"><i class="bi bi-person-check"></i>crear cuenta</button>
+                        </form>
+                        <hr>
+                            <div class="divider-custom text-center curent-account">
+                                    <span class="small text-muted mb-0">¿ya tienes cuenta? <a href="" class="link-highlight">iniciar sesion</a></span>
+                                </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+        <footer class="bg-terciary-custom text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 footer-column text-center text-md-start">
+                    <h5 class="fw-bold"><i class="bi bi-pc-display"></i> ProjectPC</h5>
+                    <p class="small text-secondary">Expertos en hardware de alto rendimiento. Envíos a todo el país.</p>
+                </div>
+
+                <div class="col-12 col-md-4 footer-column text-center">
+                    <h5 class="mb-3">Seguinos</h5>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 footer-column text-center text-md-end">
+                    <h5>Soporte</h5>
+                    <ul class="list-unstyled small text-secondary">
+                        <li>Garantía oficial</li>
+                        <li>Preguntas frecuentes</li>
+                        <li>Términos y condiciones</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center">
+                <p class="small mb-0 text-secondary">&copy; 2026 ProjectPC S.A. - Proyecto Final Módulo 1</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
