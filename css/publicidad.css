@@ -186,3 +186,16 @@ main { flex: 1; }
         font-size: 1.5rem;
     }
 }
+.promo-card{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.promo-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
