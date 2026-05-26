@@ -1,0 +1,163 @@
+:root{
+    /* Colores */
+    --primary-color: #284b63;
+    --secondary-color: #d9d9d9;
+    --terciary-color: #353535;
+    --support-color: #3c6e71;
+    --background-color: #ffffff;
+    
+    /* Tipografía */
+    --main-font: 'Roboto', sans-serif; /* Sugerida para tecnología */
+    --heading-font: 'Montserrat', sans-serif; /* Sugerida para títulos */
+    
+    /* Espaciado y bordes */
+    --border-radius-sm: 4px;
+    --border-radius-lg: 12px;
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 8px rgba(0,0,0,0.15);
+}
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main { flex: 1; }
+
+/* Estilos universales de componentes */
+.bg-primary-custom { background-color: var(--primary-color) !important; }
+.bg-terciary-custom { background-color: var(--terciary-color) !important; }
+
+.btn-support { 
+    background-color: var(--support-color); 
+    color: white; 
+    border: none; 
+}
+.btn-support:hover { 
+    background-color: #2d5254; 
+    color: white; 
+}
+
+.navbar-dark .nav-link { color: var(--secondary-color);}
+.navbar-dark .nav-link:hover { color: white; }
+
+/* Footer Responsive */
+.footer-column { margin-bottom: 1.5rem; }
+/* HERO DE LA PAGINA */
+.page-hero{
+    background-color: var(--support-color);
+    color:aliceblue;
+    padding: 2rem 2rem 2rem;
+    text-align: center;
+}
+.hero-title{
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: aliceblue;
+}
+.hero-title i{
+    color: var(--secondary-color);
+}
+.hero-subtitle{
+    font-family: var(--main-font);
+    font-size: 1.1rem;
+    color: #ffffff;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+.page-hero span{
+    color:#05fa88;
+    font-weight: 600;
+}
+/* TARJETA DE REGISTRO */
+.container-form-custom{
+    margin-top: -2.5rem;
+    margin-bottom: 4rem;
+}
+.registro-card{
+    background-color: var(--background-color);
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 2.5rem;
+}
+.card-header-custom{
+    margin-bottom: 1.8rem; 
+}
+.card-header-custom h3{
+    font-family: var(--heading-font);
+    font-size: 1.6rem;
+    color: var(--terciary-color);
+}
+.form-group-custom{
+    margin-bottom: 1.2rem;
+}
+.form-label-custom{
+    display:block;
+    font-size: 0.9rem;
+    color: var(--terciary-color);
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+}
+.form-control-custom{
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    font-size:0.95rem;
+    color: var(--terciary-color);
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    transition: border-color 0.2s ease;
+}
+.form-control-custom:focus{
+    outline: none;
+    border-color:#3c6e71;
+}
+.form-control-custom::placeholder{
+    color:#94a3b8;
+    font-size: 0.9rem;
+} 
+/* CHECKBOX Y BOTON */
+.form-check-custom{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.form-check-input-custom{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.form-check-label-custom{
+    font-size: 0.9rem;
+    color: #333333;
+    cursor: pointer;
+}
+
+.divider-custom{
+    height: 1px;
+    background-color: #ccc5c5;
+    margin: 1.5rem 0;
+}
+.link-highlight{
+    color: rgb(83, 109, 182);
+    text-decoration: underline;
+    font-weight: 500;
+}
+.link-highlight:hover{
+    color:#080441;
+}
+.current-account{
+    font-size: 0.9rem;
+    color:#d9d9d9;
+}
