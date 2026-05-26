@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Project PC</title>
+    <link rel="icon" type="image/svg" sizes="32x32" href="../assets/pc-display.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../css/global.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <i class="bi bi-pc-display"></i> ProjectPC
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <form class="d-flex mx-auto my-2 my-lg-0 w-50">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Buscar componentes..." aria-label="Search">
+                        <button class="btn btn-support" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="detalle-carrito.html" class="btn btn-outline-light position-relative border-0">
+                            <i class="bi bi-cart3 fs-5"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex gap-2 ms-lg-3">
+                        <a href="error404.html" class="btn btn-sm btn-outline-secondary text-white border-secondary">Login</a>
+                        <a href="registro.html" class="btn btn-sm btn-support">Registro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <header class="text-center mb-5">
+            <h1 class="fw-bold font-heading" style="color: var(--primary-color);">Contacto</h1>
+            <p class="text-secondary">Estamos para asesorarte. Ponete en contacto con nuestro equipo técnico.</p>
+        </header>
+
+        <div class="row g-5">
+            <section class="col-12 col-lg-6">
+                <div class="card p-4 shadow-sm border-0 h-100">
+                    <h2 class="fs-4 fw-bold mb-4 font-heading" style="color: var(--primary-color);">Envianos tu consulta</h2>
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label small fw-semibold">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ej: Juan Pérez" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label small fw-semibold">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label small fw-semibold">Asunto</label>
+                            <input type="text" class="form-control" id="asunto" placeholder="Ej: Presupuesto / Soporte Técnico" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label small fw-semibold">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribí tu consulta acá..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-support w-100 py-2 text-uppercase fw-bold tracking-wide">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="col-12 col-lg-6 d-flex flex-column justify-content-between">
+                <div class="card p-4 shadow-sm border-0 mb-4 flex-grow-1">
+                    <h2 class="fs-4 fw-bold mb-3 font-heading" style="color: var(--primary-color);">Nuestra Ubicación</h2>
+                    
+                    <ul class="list-unstyled mb-4 small text-secondary">
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill text-danger me-2"></i> Av. Rivadavia 5000, Caballito, CABA, Argentina</li>
+                        <li class="mb-2"><i class="bi bi-telephone-fill me-2" style="color: var(--support-color);"></i> +54 11 4XXX-XXXX</li>
+                        <li><i class="bi bi-clock-fill me-2" style="color: var(--support-color);"></i> Lunes a Viernes de 09:00 a 18:00 hs.</li>
+                    </ul>
+
+                    <div class="ratio ratio-4x3 rounded overflow-hidden shadow-sm">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!11m18!1m12!1m3!1d3283.845724510493!2d-58.43265552341499!3d-34.60806495772658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca4309bc0a8f%3A0x6bcfd35b91b94d18!2sAv.%20Rivadavia%205000%2C%20C1424%20CABA!5e0!3m2!1ses-419!2sar!4v1716660000000!5m2!1ses-419!2sar" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-terciary-custom text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 footer-column text-center text-md-start">
+                    <h5 class="fw-bold"><i class="bi bi-pc-display"></i> ProjectPC</h5>
+                    <p class="small text-secondary">Expertos en hardware de alto rendimiento. Envíos a todo el país.</p>
+                </div>
+                <div class="col-12 col-md-4 footer-column text-center">
+                    <h5 class="mb-3">Seguinos</h5>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 footer-column text-center text-md-end">
+                    <h5>Soporte</h5>
+                    <ul class="list-unstyled small text-secondary">
+                        <li>Garantía oficial</li>
+                        <li>Preguntas frecuentes</li>
+                        <li>Términos y condiciones</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center">
+                <p class="small mb-0 text-secondary">&copy; 2026 ProjectPC S.A. - Proyecto Final Módulo 1</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
